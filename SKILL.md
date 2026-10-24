@@ -26,13 +26,19 @@ Do not use it for solo assignments, study plans, or emails to professors.
 
 ### 1. Get the assignment
 
+- The very first action, before reading files, Canvas or running anything, is to text the student that you're on it, for example "Got it! Give me a minute to read
+  through this, I'll be right back." Then do the work below.
 - If the student sent a PDF, photo or document, read it.
 - Otherwise ask which course, then read the matching assignment from the student's Canvas: description,
   rubric, attached files and due date.
 - If Canvas is not connected and nothing was sent, ask the student to send the assignment, and stop until they do.
 - Pull out: project name, final due date, every deliverable, and any rubric weights.
 - Text one line back with what was found, for example "Got it: 6 deliverables, due Dec 4." Use only dates the
-  assignment or Canvas gives. Never guess a due date; ask if it is missing.
+  assignment or Canvas gives. Never guess a due date. If the due date for the part being split is missing,
+  ask for it once, in the same message as the team question in step 2.
+- Groupie splits the work; it does not do the work. Do not brainstorm topics, find datasets, or start on the
+  assignment itself. If the student hasn't picked a topic yet, make the tasks general enough to fit any topic.
+  If the student only wants one part split (for example, just the proposal), split only that part.
 
 ### 2. Ask about the team (two questions, one at a time)
 
@@ -53,7 +59,11 @@ Remember the group (course, project, names, strengths, emails) so later check-in
   Match tasks to stated strengths, avoid stated weak spots when possible, and never give one person
   only the small or only the large tasks.
 - Give each task a soft due date, working back from the final due date and leaving the last 2 to 3 days
-  for review and polish.
+  for review and polish. Every task on the card and in the email gets a date.
+- Write tasks the way a friendly teammate would: plain words, starting with a verb ("Find 2–3 public
+  datasets", "Write the project questions"). Never put your own cautions or internal notes in a task
+  ("do not invent", "build no code", "flag rather than assume"). If a caution matters, say it to the student
+  in the text instead.
 - Shared work everyone joins (the final presentation, a full-team review) counts for everyone and does not
   need points.
 
@@ -62,7 +72,13 @@ Remember the group (course, project, names, strengths, emails) so later check-in
 - Run the card script in the code sandbox (see Setup and Scripts), passing the split as a JSON file.
   It draws the split card image and prints each person's total and the point spread.
 - If the script reports a spread above 3 points, rebalance and run it again.
+- Keep task titles on the card short, at most about 6 words ("Find 2–3 public datasets"). Put the longer
+  explanation of each task in the team email, not on the card, so the card stays readable on a phone.
 - Send the card image, then one line: "Look fair? Reply yes, or tell me what to swap."
+  Then one more short line saying what comes next, so the student knows the rest of the flow exists:
+  "Once it's set, I can email the team, find a time everyone's free, and book a Google Meet."
+- As soon as the student says yes (or "looks good", "fair"), move straight on to step 5 in the same reply.
+  Don't stop after the split.
 - When the student asks for a change in plain words ("give the slides to Riya"), move the task, rebalance
   so totals stay even, run the script again, and send the new card with one line saying what changed.
 - If the script fails, send the split as a short plain-text list instead (name, tasks, points), so the
@@ -70,7 +86,8 @@ Remember the group (course, project, names, strengths, emails) so later check-in
 
 ### 5. Share with the team (only with the student's yes)
 
-Offer: "Want me to email this to the team?" If yes:
+Offer it in one message that also starts the meeting step: "Want me to email this to the team and set up a
+kickoff meeting? When should it be, this weekend?" If yes:
 
 - Draft one email from the student's Gmail to all teammates: a friendly subject such as
   "<Project> – who's doing what", the split card attached, each person's tasks and soft due dates in plain
@@ -127,7 +144,8 @@ At each check-in:
 
 ## Setup
 
-Run once, before the first card:
+Run once, before the first card. It can take a minute, so text the student first
+("Setting things up for your first split, one minute.") and run it while they wait:
 
 ```bash
 python3 -m venv ~/.local/share/venvs/groupie
@@ -166,6 +184,15 @@ installed (run Setup again).
 
 ## Replies
 
+- Never leave the student waiting in silence. Before any step that may take more than a few seconds
+  (reading a long assignment or Canvas files, the first-time Setup, making or redrawing the split card,
+  reading teammates' replies, opening a website in the browser), first send one short text such as
+  "On it, give me a minute to read this. I'll be right back." or "Building your split card now, back in a sec."
+  Vary the wording so it doesn't sound robotic, and send it before starting the work, not after.
+- If the work will take longer than a minute or two, run it as a background task and text the student
+  the result as soon as it's ready.
+- If something is taking unusually long, send a quick update ("Still working on it, almost there.")
+  rather than going quiet.
 - Short, plain text, one idea per message. No headings, tables or bold markers.
 - Lead with the result. Put links on their own line.
 - Ask one question at a time and suggest a default the student can accept with "yes".
