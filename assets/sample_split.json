@@ -1,0 +1,34 @@
+{
+  "project": "Capstone: Campus Shuttle App",
+  "course": "CS 4800",
+  "due": "Dec 4",
+  "members": [
+    {"name": "Yug", "tasks": [
+      {"title": "System architecture doc", "points": 6, "due": "Nov 10", "done": 6},
+      {"title": "Sprint planning + backlog", "points": 3, "due": "Nov 6", "done": 3},
+      {"title": "Final report: intro + design", "points": 4, "due": "Nov 30", "done": 0}
+    ]},
+    {"name": "Riya", "tasks": [
+      {"title": "UI design in Figma", "points": 7, "due": "Nov 12", "done": 7},
+      {"title": "Presentation slides", "points": 5, "due": "Dec 1", "done": 1}
+    ]},
+    {"name": "Dev", "tasks": [
+      {"title": "Backend API + database", "points": 8, "due": "Nov 20", "done": 0},
+      {"title": "Deploy to cloud", "points": 4, "due": "Nov 26", "done": 0}
+    ]},
+    {"name": "Aarav", "tasks": [
+      {"title": "Mobile front end", "points": 8, "due": "Nov 22", "done": 4},
+      {"title": "Usability testing", "points": 3, "due": "Nov 28", "done": 0}
+    ]},
+    {"name": "Meera", "tasks": [
+      {"title": "Live shuttle data integration", "points": 6, "due": "Nov 18", "done": 3},
+      {"title": "Test plan + QA", "points": 4, "due": "Nov 27", "done": 0},
+      {"title": "Final report: results", "points": 3, "due": "Nov 30", "done": 0}
+    ]},
+    {"name": "Kabir", "tasks": [
+      {"title": "User research + interviews", "points": 5, "due": "Nov 8", "done": 5},
+      {"title": "Requirements spec", "points": 4, "due": "Nov 9", "done": 4},
+      {"title": "Demo video", "points": 4, "due": "Dec 2", "done": 0}
+    ]}
+  ]
+}
